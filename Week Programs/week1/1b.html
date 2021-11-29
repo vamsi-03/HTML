@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Book Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .header
+        {
+            display: flex;
+            justify-content: center;
+            text-align: center;     
+        }
+
+        .nav
+        {
+            background-color: black;
+            padding: 20px;
+        }
+
+        .navbar 
+        {
+            font-family: 'Roboto';
+            color: white;
+            padding-right:10px;
+            text-decoration: none;
+        }
+
+        .navbar:hover
+        {
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+
+        .container
+        {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .leftnav
+        {   
+            flex: .5;
+            padding: 0;
+            border-right: 2px solid;
+            width: fit-content;
+            font-family: 'Roboto';
+            margin-right: 200px;
+        }
+
+        .table
+        {
+            flex: 2;
+        }
+        table,th,td
+        {
+            padding: 15px;
+            font-family: 'Roboto';
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        a{text-decoration: none;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="C:\Users\Dell\Desktop\html\imgs\bookstore.png" width="150" height="100">
+    </div>
+
+    <div class="nav">
+        <a href="#" class="navbar">Home</a>
+        <a href="#"class="navbar">Latest Arrivals</a>
+        <a href="#" class="navbar">Best Sellers</a>
+        <a href="#" class="navbar">Contact US</a>
+        <a href="#" class="navbar">Search</a>
+    </div><hr>
+
+    <div class="container">
+        <div class="leftnav">
+            <h3>Computers</h3>
+            <h3>Electronics</h3>
+            <h3>Electrical</h3>
+            <h3>Bio-Tech</h3>
+        </div>
+
+        <div class="table">
+            <table>
+                <th>Book Image</th>
+                <th>Details</th>
+                <th>No. of Pages</th>
+                <th>&nbsp;</th>
+
+                <tr>
+                    <td><img src="C:\Users\Dell\Desktop\html\imgs\blackbook.jfif" width="200" height="200"></td>
+                    <td><h3>HTML5 Black Book</h3><p>Kogent Learning Solutions <br>
+                        Dreamtech Press <br>
+                        Rs. 570/-</p></td>
+                    <td>531</td>
+                    <td><a href="#"><h3>More Details</h3></a></td>
+                    
+                </tr>
+
+                <tr>
+                    <td><img src="C:\Users\Dell\Desktop\html\imgs\phpandsql.jfif" width="200" height="200"></td>
+                    <td><h3>Beginning PHP and MySQL</h3><p>4th Edition <br>
+                        W Jason Gilmore <br>
+                        Apress <br>
+                        Rs. 520/-</p></td>
+
+                    <td>661</td>
+                    <td><a href="#"><h3>More Details</h3></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

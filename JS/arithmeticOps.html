@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arith ops</title>
+</head>
+<body>
+    
+    <form action="">
+        <input type="text" id="val1" placeholder="val 1">
+        <input type="text" id="val2" placeholder="val 2">
+        <input type="text" id="op" placeholder="Op">
+    </form>
+    <h1 id="out"></h1>
+    <button onclick="calculate()">Submit</button>
+    <script>
+        function calculate() 
+        {
+            var val1 = document.getElementById("val1").value
+            var val2 = document.getElementById("val2").value
+            var op = document.getElementById("op").value
+
+            if (op === "+") 
+            {
+                var output = parseInt(val1) + parseInt(val2)
+                document.getElementById("out").innerText=output
+            } 
+            else if (op === "-") 
+            {
+                var output = parseInt(val1) - parseInt(val2)
+                document.getElementById("out").innerText=output
+            }
+            else if (op === "*") 
+            {  
+                var output = parseInt(val1) * parseInt(val2) 
+                document.getElementById("out").innerText=output
+            }
+            else if (op === "/") 
+            {
+                var output = parseInt(val1) / parseInt(val2)
+                document.getElementById("out").innerText=output
+            }
+        }
+    </script>
+</body>
+</html>

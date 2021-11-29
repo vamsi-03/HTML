@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Regstration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .regform
+        {
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto';
+        }   
+        
+        input
+        {
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            border-bottom: 1px solid;
+        }
+
+        input:hover
+        {
+            outline: none;
+            border-bottom: 2px solid;
+            border-bottom-color: #0baa0b;
+        }
+
+        input:focus
+        {
+            outline: none;
+            border-bottom: 2px solid;
+            border-bottom-color: #0baa0b;
+        }
+
+        select
+        {
+            padding: 10px;
+            margin: 10px;
+        }
+        button
+        {
+            color: white;
+            background-color: #00b300;
+            border: none;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        button:hover
+        {
+            background-color: black;
+            box-shadow: 2px 2px grey;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;font-family: 'Roboto';">Registration Form</h1>
+    <div class="regform">
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required><br>
+            
+            <input type="text" placeholder="Username" size="52" required><br>
+            <input type="password" placeholder="Password" size="52" required><br>
+            <input type="password" placeholder="Confirm Password" size="52" required><br>
+
+            <input type="text" placeholder="Address" required>
+            <input type="number" placeholder="ZIP Code" required><br>
+    
+            <input type="email" placeholder="Email" required>
+            <input type="number" placeholder="Mobile No." required><br>
+
+            <label for="genders" >Gender</label>
+            <select name="genders" >
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select><br>
+    
+            <label for="DOB">Birthday</label>
+            <input type="date" name="DOB"><br><br>
+
+            
+            <input type="checkbox" name="agree">
+            <label for="agree">I Agree to all T&C</label><br>
+            
+            <center><button>Submit</button></center>
+        </form>
+    </div>
+</body>
+</html>

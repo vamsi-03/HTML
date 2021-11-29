@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Attribute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .header
+        {
+            font-family: 'Roboto';
+            text-align: center;
+            background-image: linear-gradient(to right,white,#ff66ff);
+            color: white;
+        }
+        .footer
+        {
+            margin-top: 27.5%;
+            font-family: 'Roboto';
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .nonvegitems
+        {
+            border: 1px solid;
+            padding: 15px;
+            border-top-color: #53ff1a;
+            border-bottom-color: #ff66ff;
+            border-left-color: #ff6666;
+            border-right-color: #3399ff;
+            font-family: 'Roboto';
+            margin-right: 5%;
+        }
+
+        .vegitems
+        {
+            border: 1px solid;
+            padding: 15px;
+            border-top-color: #53ff1a;
+            border-bottom-color: #ff66ff;
+            border-left-color: #ff6666;
+            border-right-color: #3399ff;
+            font-family: 'Roboto';
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h1>MENU</h1>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="nonvegitems">
+            <h2>Non-Veg</h2>
+            <ul>
+                <li data-nonveg-type="hicken" onclick="display(this)">Chicken Curry</li>
+                <li data-nonveg-type="Mutton" onclick="display(this)">Mutton Curry</li>
+                <li data-nonveg-type="Fish" onclick="display(this)">Fish Curry</li>
+              </ul>
+        </div>
+        <script>
+            function display(item) 
+            {
+                var content=item.getAttribute("data-nonveg-type");
+                alert(item.innerHTML+" is Available!");
+            }
+        </script>
+    
+        <div class="vegitems">
+            <h2>Veg</h2>
+            <ul>
+                <li data-veg-type="panner" onclick="display(this)">Paneer Curry</li>
+                <li data-veg-type="Aloo" onclick="display(this)">Aloo Curry</li>
+                <li data-veg-type="Mushrooms" onclick="display(this)">Mushrooms Curry</li>
+              </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <h2>THE END</h2>
+        </footer>
+    </div>
+</body>
+</html>

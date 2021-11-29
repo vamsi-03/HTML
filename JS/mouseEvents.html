@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+</head>
+<body>
+    <button onclick="myFunction()">Click me</button>
+    <p ondblclick="myFunction1()">Double-click this paragraph to trigger a function.</p>
+    <h3 id="demo1"></h3>
+    <p id="demo2"></p>
+
+    <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to green.
+        </p>
+
+
+    <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="https://www.w3schools.com/jsref/smiley.gif" alt="Smiley" width="32" height="32">
+
+    <script>
+        function myFunction() 
+        {
+            document.getElementById("demo1").innerHTML = "Hello World";
+        }
+
+        function myFunction1() {
+            document.getElementById("demo2").innerHTML = "Hello World";
+        }
+
+        function mouseDown() 
+        {
+            document.getElementById("myP").style.color = "red";
+        }
+
+        function mouseUp() {
+            document.getElementById("myP").style.color = "green";
+        }
+
+        function bigImg(x) 
+        {
+            x.style.height = "64px";
+            x.style.width = "64px";
+        }
+
+        function normalImg(x) 
+        {
+            x.style.height = "32px";
+            x.style.width = "32px";
+        }
+        
+        </script>
+
+</body>
+</html>

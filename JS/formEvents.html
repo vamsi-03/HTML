@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>Form Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .regform
+        {
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto';
+        }   
+        
+        input
+        {
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            border-bottom: 1px solid;
+        }
+
+        input:hover
+        {
+            outline: none;
+            border-bottom: 2px solid;
+            border-bottom-color: #0baa0b;
+        }
+
+        input:focus
+        {
+            outline: none;
+            border-bottom: 2px solid;
+            border-bottom-color: #0baa0b;
+        }
+
+        select
+        {
+            padding: 10px;
+            margin: 10px;
+        }
+        .regform form input[type = "submit"]
+        {
+            color: white;
+            background-color: #00b300;
+            border: none;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .regform form input[type = "submit"]:hover
+        {
+            background-color: black;
+            box-shadow: 2px 2px grey;
+        }
+
+        .regform form input[type = "reset"]
+        {
+            color: white;
+            background-color: #00b300;
+            border: none;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .regform form input[type = "reset"]:hover
+        {
+            background-color: black;
+            box-shadow: 2px 2px grey;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;font-family: 'Roboto';">Registration Form</h1>
+    <div class="regform">
+        <form onsubmit="myFunction3()" onreset="myFunction4()">
+            
+            <input type="text" placeholder="Username" size="52" required onblur="myFunction1()"><br>
+            <input type="email" placeholder="Email" required>
+            <input type="number" placeholder="Mobile No." required onfocus="myFunction5(this)"><br>
+            <input type="password" placeholder="Password" size="52" required><br>
+            <input type="password" placeholder="Confirm Password" size="52" required><br>
+
+
+            <label for="genders" >Gender</label>
+            <select name="genders" id="gen" onchange="myFunction2()">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select><br>
+            
+            <center><input type="submit"></center>
+            <center><input type="reset"></center>
+        </form>
+    </div>
+
+    <script>
+        function myFunction1() 
+        {
+            alert("HEllo")
+        }
+
+        function myFunction2() 
+        {
+            var x = document.getElementById("gen").value;
+            alert("You selected: " + x)
+        }
+
+        function myFunction3() 
+        {
+            alert("The form was submitted");
+        }
+
+        function myFunction4() 
+        {
+            alert("The form was reset");
+        }
+
+        function myFunction5(x) 
+        {
+            x.style.background = "yellow";
+        }
+    </script>
+</body>
+</html>
