@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>OUTputs and OBJ</title>
+</head>
+<body>
+
+    <button onclick="disp()">Write</button>
+    <button onclick="log()">Log</button>
+    <button onclick="al()">Alert</button>
+
+    <script>
+        function disp(params) 
+        {
+            document.write("<h1>Hello world</h1>");
+        }
+        function log(params) 
+        {
+            console.log("Hello")
+        }
+        function al(params) 
+        {
+            alert("This is alert")
+        }
+
+        class Car 
+        {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+
+        let myCar1 = new Car("Ford", 2014);
+
+        console.log(myCar1.name)
+        console.log(myCar1.year)
+
+
+        var Person = {
+
+            "name" : "Ashish",
+            "age" : "19",
+            "gender" : "male",
+        }
+
+        console.log(Person.name)
+        console.log(Person.age)
+        console.log(Person.gender)
+
+    </script>
+</body>
+</html>

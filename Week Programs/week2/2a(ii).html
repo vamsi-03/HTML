@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>display local</title>
+</head>
+<body bgcolor="grey">
+    <h1 id="user">Your Username is: </h1>
+    <h2 id="pass">Your Password is: </h2>
+    <button onclick="display()">Display details</button>
+        <script>
+            function display() 
+            {
+                if (typeof(Storage) !== "undefined") 
+                {
+                    document.getElementById("user").innerText = document.getElementById("user").innerText+"  "+localStorage.getItem('username');
+                    document.getElementById("pass").innerText = document.getElementById("pass").innerText+ "    " +localStorage.getItem('password');
+                } 
+                else 
+                {
+                    alert("No storage option");
+                }
+                
+            }
+        </script>
+</body>
+</html>

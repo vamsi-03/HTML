@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				var img = $('img')
+				img.mouseenter(function () {
+					img.css({ border: '0px solid violet' }).animate({
+						opacity: 0.9,
+						borderWidth: '3px',
+					})
+				})
+				img.mouseleave(function () {
+					img.css({ border: '0px solid violet' }).animate({
+						opacity: 1,
+						borderWidth: '0px',
+					})
+				})
+
+				$('#ones').click(() => {
+					$('#one').show()
+				})
+
+				$('#oneh').click(() => {
+					$('#one').hide()
+				})
+
+				$('#twos').click(() => {
+					$('#two').show()
+				})
+
+				$('#twoh').click(() => {
+					$('#two').hide()
+				})
+			})
+
+			function changeArea(params) {
+				var div = document.getElementById('d')
+				div.style.height = '200px'
+				div.style.width = '200px'
+			}
+		</script>
+		<title>Js,Jquery</title>
+	</head>
+	<body>
+		<div id="a">
+			<img
+				src="https://sugargeekshow.com/wp-content/uploads/2020/05/vanilla-cupcake-recipe-36.jpg"
+				alt="cupcake"
+				width="250"
+				height="250"
+			/>
+		</div>
+		<div id="b">
+			<video width="320" height="240" controls autoplay muted>
+				<source
+					src="C:\Users\Dell\Desktop\WT-Lab\vids\countdown.mp4"
+					type="video/mp4"
+				/>
+			</video>
+
+			<video width="320" height="240" controls>
+				<source
+					src="C:\Users\Dell\Desktop\WT-Lab\vids\5 seconds timer.mp4"
+					type="video/mp4"
+				/>
+			</video>
+		</div>
+
+		<div id="c"></div>
+		<div
+			id="d"
+			style="background-color: aqua; width: 100px; height: 100px"
+		></div>
+		<br />
+		<button onclick="changeArea()">Change Area</button><br />
+		<div id="e">
+			<h1 id="one">This is Heading 1</h1>
+			<button id="ones">Show</button>
+			<button id="oneh">Hide</button><br /><br />
+			<h2 id="two">This is Heading 2</h2>
+			<button id="twos">Show</button>
+			<button id="twoh">Hide</button>
+		</div>
+	</body>
+</html>

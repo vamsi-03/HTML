@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+
+        .header
+        {
+            display: flex;
+            justify-content: center;
+            text-align: center;     
+        }
+
+        .nav
+        {
+            background-color: black;
+            padding: 20px;
+        }
+
+        .container
+        {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .leftnav
+        {   
+            flex: .2;
+            border-right: 2px solid;
+            width: fit-content;
+            font-family: 'Roboto';
+            margin-right: 10px;
+        }
+
+        .description
+        {
+            flex: .5;
+            border: 2px solid;
+            margin-right: 10px;
+        }
+
+        .login
+        {
+            flex: .3;
+            border: 2px solid;
+        }
+        
+        .form
+        {
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        
+        .navbar
+        {
+            color: white;
+            text-decoration: none;
+            padding-right:10px ;
+            font-family: 'Roboto';
+        }
+        .navbar:hover
+        {
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+        p
+        {
+            font-family: 'Roboto';
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="C:\Users\Dell\Desktop\html\imgs\bookstore.png" width="150" height="100">
+    </div>
+
+    <div class="nav">
+        <a href="#" class="navbar">Home</a>
+        <a href="#" class="navbar">Latest Arrivals</a>
+        <a href="#" class="navbar">Best Sellers</a>
+        <a href="#" class="navbar">Contact US</a>
+        <a href="#" class="navbar">Search</a>
+    </div><hr>
+
+    <div class="container">
+        <div class="leftnav">
+            <h3>Computers</h3>
+            <h3>Electronics</h3>
+            <h3>Electrical</h3>
+            <h3>Bio-Tech</h3>
+        </div>
+    
+        <div class="description">
+            <p style="padding-left: 10px;">Description of book store</p>
+        </div>
+    
+        <div class="login">
+            <form class="form">
+                <input type="text" placeholder="Username"><br><br>
+                <input type="password" placeholder="Password"><br><br>
+                <input type="submit">
+                <p>New User?</p>
+                <a href="#" style="text-decoration: none;">Create an Account</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Window Events</title>
+</head>
+<body onabort="abort()" onload="load()" onunload="unload()" onresize="resize()">  
+    <script>
+        function abort() 
+        {
+            alert("Aborted!")
+        }
+
+        function load()
+        {
+            alert("Loading!")
+        }
+        function unload()
+        {
+            alert("Unloading")
+        }
+        function resize()
+        {
+            alert("Window Resized")
+        }
+
+    </script>
+</body>
+</html>
